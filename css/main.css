@@ -36,6 +36,64 @@ p {
     font-size: 18px;
 }
 
+/*--- Preloader ---*/
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:  url("../img/pattern.png") no-repeat center ;
+    background-size: cover;
+    z-index: 2;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+}
+
+.preloader.done {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background: url("../img/preload/flower.png") center center;
+    background-size: contain;
+    transform: translate( -50%, -50%);
+    animation: spinner 1s infinite alternate ease-in-out;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+}
+
+.text {
+    color: #a4559c;
+    padding-top: 250px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    font-size: 50px;
+    font-family:  'Pacifico', cursive;
+    text-transform: uppercase;
+    transform: translate( -50%, -50%);
+}
+
+@keyframes spinner {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(460deg);
+    }
+}
+
+
+
 /*--- Header ---*/
 
 .header{
@@ -168,6 +226,15 @@ footer {
     p {
         font-size: 16px;
     }
+
+    .spinner {
+    width: 100px;
+    height: 100px;
+    }
+
+    .text {
+        font-size: 30px;
+    }
 }
 
 @media screen  and (max-width: 600px) {
@@ -196,6 +263,15 @@ footer {
 
     .grid__itm:nth-child(even) .grid__img {
             margin: 0 0 0 0;
+    }
+
+    .spinner {
+        width: 80px;
+        height: 80px;
+    }
+
+    .text {
+        font-size: 20px;
     }
 }
 
