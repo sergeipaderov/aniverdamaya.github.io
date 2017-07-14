@@ -36,6 +36,10 @@ p {
     font-size: 18px;
 }
 
+ul {
+    font-size: 0;
+}
+
 /*--- Preloader ---*/
 
 .preloader {
