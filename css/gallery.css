@@ -168,6 +168,7 @@ button:hover {
     text-align: center;
     background: url("../img/pattern.png") no-repeat center ;
     background-size: cover;
+    overflow: hidden;
 }
 
 .horizontal {
