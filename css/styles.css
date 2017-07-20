@@ -592,6 +592,6 @@ footer {
     }
 
     #hero .slider-holder .controls .arrow#right {
-          right: 25px;
+          right: 10px;
           pointer-events: auto; }
 }
