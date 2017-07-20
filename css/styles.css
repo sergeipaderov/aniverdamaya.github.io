@@ -469,7 +469,7 @@ body {
       position: absolute;
       width: 100%;
       top: 50%;
-      heigth: auto;
+      height: auto;
       pointer-events: none;
       z-index: 2; }
       #hero .slider-holder .controls .arrow {
@@ -494,7 +494,7 @@ body {
           left: 10px;
           pointer-events: auto; }
         #hero .slider-holder .controls .arrow#right {
-          right: 10px;
+          right: 25px;
           pointer-events: auto; }
 
           /*--- Header ---*/
@@ -557,4 +557,41 @@ footer {
     box-sizing: border-box;
     box-shadow: 0px 5px 15px #353535;
     padding: 18px 0;
-}   
+}  
+  
+/*--- Adaptive ---*/
+
+@media screen  and (max-width: 800px) {
+
+    .flex__cont {
+        flex: 1 1 auto;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    #hero .slider-holder .controls .arrow#right {
+          right: 25px;
+          pointer-events: auto; }
+}
+
+@media screen  and (max-width: 600px) {
+   
+     .header h1 {
+        font-size: 20px;
+    }
+
+    .header a{
+        font-size: 20px;
+    }
+   
+    p {
+        font-size: 16px;
+    }
+
+    #hero .slider-holder .controls .arrow#right {
+          right: 25px;
+          pointer-events: auto; }
+}
